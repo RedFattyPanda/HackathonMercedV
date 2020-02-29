@@ -5,18 +5,55 @@
         <title>Day 0</title>
     </head>
 
+    <script>
+        function btn1(){
+            a.href = "Day1.html";
+            document.body.appendChild(a);
+        }
+    </script>
+
     <style>
         h1{
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
             font-size: 400%;
         }
+        .box-btn1{
+            background-color: red;
+            padding: 0;
+            border: none;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:150%;
+            color: white;
+        }
     </style>
 
+    <script>
+        var count = 1;
+        function setColor(btn, color) {
+            var property = document.getElementById(btn);
+            property.style.backgroundColor = color;
+
+            /*if (count == 0) {
+                property.style.backgroundColor = "#FFFFFF"
+                count = 1;        
+            }
+            else {
+                property.style.backgroundColor = "#7FFF00"
+                count = 0;
+            }*/
+        }
+    </script>
+
+
     <body>
+        
         <h1> Quick Checkup Before Moving In</h1>
         <h2> Essentials: </h2>
-        <li>Bed and Blanket</li>
+        <li>
+            <span class="tab"></span>
+            <button id="btn1" class="box-btn1" onclick="setColor(btn1, green)">box1</button>
+        </li>
         <li>Keys</li>
         <li>Food</li>
     </body>

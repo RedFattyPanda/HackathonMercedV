@@ -29,7 +29,6 @@
     </style>
 
     <script>
-        var count = 1;
         function setColor(btn, color) {
             var property = document.getElementById(btn);
             property.style.backgroundColor = color;
@@ -43,9 +42,15 @@
         <h2> Essentials: </h2>
         <li>
             <span class="tab"></span>
-            <button id="btnReq1" class="box-btn1" onclick="setColor('btnReq1', 'green')">box1</button>
+            <button id="btnReq1" class="box-btn1" onclick="setColor('btnReq1', 'green')">Bed and Blanket</button>
         </li>
-        <li>Keys</li>
-        <li>Food</li>
+        <li>
+            <span class="tab"></span>
+            <button id="btnReq2" class="box-btn1" onclick="setColor('btnReq2', 'green')">Keys</button>
+        </li>
+        <li>
+            <span class="tab"></span>
+            <button id="btnReq3" class="box-btn1" onclick="setColor('btnReq3', 'green')">Food</button>
+        </li>
     </body>
 </html>

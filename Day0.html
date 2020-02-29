@@ -50,9 +50,15 @@
     </style>
 
     <script>
-        function setColor(btn, color) {
+        function setColor(btn) {
             var property = document.getElementById(btn);
-            property.style.backgroundColor = color;
+            if(property.style.backgroundColor == 'green'){
+                property.style.backgroundColor = 'red';
+            }
+            else{
+                property.style.backgroundColor = 'green';
+            }
+            
         }
     </script>
 
@@ -70,25 +76,25 @@
             <ul class="alignleft">
                 <h2>Essentials:</h2>
                 <li>
-                    <button id="btnEss1" class="box-btn1" onclick="setColor('btnEss1', 'green')">Bed and Blanket</button>
+                    <button id="btnEss1" class="box-btn1" onclick="setColor('btnEss1')">Bed and Blanket</button>
                 </li>
                 <li padding: 5px 0px;>
-                    <button id="btnEss2" class="box-btn1" onclick="setColor('btnEss2', 'green')">Keys</button>
+                    <button id="btnEss2" class="box-btn1" onclick="setColor('btnEss2')">Keys</button>
                 </li>
                 <li>
-                    <button id="btnEss3" class="box-btn1" onclick="setColor('btnEss3', 'green')">Food</button>
+                    <button id="btnEss3" class="box-btn1" onclick="setColor('btnEss3')">Food</button>
                 </li>
             </ul>
             <ul class="alignright">
                 <h2>Recommendations:</h2>
                 <li>
-                    <button id="btnRec1" class="box-btn1" onclick="setColor('btnRec1', 'green')">Item 1</button>
+                    <button id="btnRec1" class="box-btn1" onclick="setColor('btnRec1')">Item 1</button>
                 </li>
                 <li padding: 5px 0px;>
-                    <button id="btnRec2" class="box-btn1" onclick="setColor('btnRec2', 'green')">Item 2</button>
+                    <button id="btnRec2" class="box-btn1" onclick="setColor('btnRec2')">Item 2</button>
                 </li>
                 <li>
-                    <button id="btnRec3" class="box-btn1" onclick="setColor('btnRec3', 'green')">Item 3</button>
+                    <button id="btnRec3" class="box-btn1" onclick="setColor('btnRec3')">Item 3</button>
                 </li>
             </ul>
         </div>

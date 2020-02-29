@@ -19,6 +19,8 @@
             font-size: 400%;
         }
         .box-btn1{
+            width: 200px;
+            height: 40px;
             background-color: red;
             padding: 0;
             border: none;
@@ -29,19 +31,9 @@
     </style>
 
     <script>
-        var count = 1;
         function setColor(btn, color) {
             var property = document.getElementById(btn);
             property.style.backgroundColor = color;
-
-            /*if (count == 0) {
-                property.style.backgroundColor = "#FFFFFF"
-                count = 1;        
-            }
-            else {
-                property.style.backgroundColor = "#7FFF00"
-                count = 0;
-            }*/
         }
     </script>
 
@@ -52,9 +44,15 @@
         <h2> Essentials: </h2>
         <li>
             <span class="tab"></span>
-            <button id="btn1" class="box-btn1" onclick="setColor('btn1', 'green')">box1</button>
+            <button id="btnReq1" class="box-btn1" onclick="setColor('btnReq1', 'green')">Bed and Blanket</button>
         </li>
-        <li>Keys</li>
-        <li>Food</li>
+        <li padding: 5px 0px;>
+            <span class="tab"></span>
+            <button id="btnReq2" class="box-btn1" onclick="setColor('btnReq2', 'green')">Keys</button>
+        </li>
+        <li>
+            <span class="tab"></span>
+            <button id="btnReq3" class="box-btn1" onclick="setColor('btnReq3', 'green')">Food</button>
+        </li>
     </body>
 </html>

@@ -28,6 +28,9 @@
             font-size:150%;
             color: white;
         }
+        ul li{
+            padding: 2px; 
+        }
     </style>
 
     <script>
@@ -42,17 +45,20 @@
         
         <h1> Quick Checkup Before Moving In</h1>
         <h2> Essentials: </h2>
-        <li>
-            <span class="tab"></span>
-            <button id="btnReq1" class="box-btn1" onclick="setColor('btnReq1', 'green')">Bed and Blanket</button>
-        </li>
-        <li padding: 5px 0px;>
-            <span class="tab"></span>
-            <button id="btnReq2" class="box-btn1" onclick="setColor('btnReq2', 'green')">Keys</button>
-        </li>
-        <li>
-            <span class="tab"></span>
-            <button id="btnReq3" class="box-btn1" onclick="setColor('btnReq3', 'green')">Food</button>
-        </li>
+        <ul>
+            <li>
+                <span class="tab"></span>
+                <button id="btnReq1" class="box-btn1" onclick="setColor('btnReq1', 'green')">Bed and Blanket</button>
+            </li>
+            <li padding: 5px 0px;>
+                <span class="tab"></span>
+                <button id="btnReq2" class="box-btn1" onclick="setColor('btnReq2', 'green')">Keys</button>
+            </li>
+            <li>
+                <span class="tab"></span>
+                <button id="btnReq3" class="box-btn1" onclick="setColor('btnReq3', 'green')">Food</button>
+            </li>
+        </ul>
+        
     </body>
 </html>

@@ -6,9 +6,9 @@
     </head>
 
     <style>
-        body{
+       /* body{
             background-color: orange;
-        }
+        }*/
         h1{
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
@@ -69,7 +69,10 @@
     </style>
 
     <script>
-        
+        function btn1(){
+            a.href = "Day1.html";
+            document.body.appendChild(a);
+        }
     </script>
 
     <body>
@@ -83,11 +86,11 @@
             <a href = "ContactUs.html">Contact Us</a>
         </h3>
         <span class="tab"></span>
-        <button id="btn1" class="box-btn1" onclick="window.location.href = 'Day1.html';">box1</button>
+        <button id="btn1" class="box-btn1" onclick=btn1()>box1</button>
         <span class="tab"></span> 
-        <button id="btn2" class="box-btn2" onclick="window.location.href = 'Day1.html';">box2</button>
+        <button id="btn2" class="box-btn2" onclick=btn2()>box2</button>
         <span class="tab"></span>
-        <button id="btn3" class="box-btn3" onclick="window.location.href = 'Day1.html';">box3</button>
+        <button id="btn3" class="box-btn3">box3</button>
         <span class="tab"></span>
 
         <script type="text/javascript">

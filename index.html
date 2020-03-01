@@ -24,47 +24,50 @@
         span.tab{
             margin-left: 150px;
         }
-        .box-btn1{
+        .button{
             width: 300px;
             height: 300px;
             text-align: left;
-            transform: translateY(-5%);
             background-color: rgb(182, 2, 2);
-            padding: 0;
-            border: none;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            border: 2px solid white;
+            display: inline-block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 350%;
-            color: white;
-            padding-bottom: 200px;
             padding-left: 30px;
+            padding-bottom: 200px;
         }
-        .box-btn2{
-            width: 300px;
-            height: 300px;
-            text-align: left;
-            transform: translateY(10%);
+        .button1{
+            background-color: rgb(182, 2, 2);
+            color: white;
+            transform: translateY(-5%);
+            transition-duration: 0.5s;
+        }
+        .button1:hover{
+            background-color: white;
+            color: rgb(182, 2, 2);
+            border: 2px solid black;
+        }
+        .button2{
             background-color: rgb(19, 19, 109);
-            padding: 0;
-            border: none;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 350%;
             color: white;
-            padding-bottom: 200px;
-            padding-left: 30px;
+            transform: translateY(10%);
+            transition-duration: 0.5s;
         }
-        .box-btn3{
-            width: 300px;
-            height: 300px;
-            text-align: left;
-            transform: translateY(25%);
+        .button2:hover{
+            background-color: white;
+            color: rgb(19, 19, 109);
+            border: 2px solid black;
+        }
+        .button3{
             background-color: rgb(17, 92, 17);
-            padding: 0;
-            border: none;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 350%;
             color: white;
-            padding-bottom: 200px;
-            padding-left: 30px;
+            transform: translateY(25%);
+            transition-duration: 0.5s;
+        }
+        .button3:hover{
+            background-color: white;
+            color: rgb(17, 92, 17);
+            border: 2px solid black;
         }
     </style>
 
@@ -88,11 +91,11 @@
             <a href = "ContactUs.html">Contact Us</a>
         </h3>
         <span class="tab"></span>
-        <button id="btn1" class="box-btn1" onclick=btn1()>Day 0</button>
+        <button id="btn1" class="button button1" onclick=btn1()>Day 0</button>
         <span class="tab"></span> 
-        <button id="btn2" class="box-btn2" onclick=btn2()>box2</button>
+        <button id="btn2" class="button button2" onclick=btn2()>box2</button>
         <span class="tab"></span>
-        <button id="btn3" class="box-btn3" onclick=btn3()>Day 30</button>
+        <button id="btn3" class="button button3" onclick=btn3()>Day 30</button>
         <span class="tab"></span>
 
         <script type="text/javascript">

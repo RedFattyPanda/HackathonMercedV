@@ -1,0 +1,150 @@
+
+/* Headers */
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 300%;
+}
+h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%
+}
+h3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%
+}
+h4{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%
+}
+
+/* Span */
+span.tab{
+    margin-left: 150px;
+}
+span.smallTab{
+    margin-left: 100px;
+}
+span.medTab{
+    margin-left: 150px;
+}
+span.bigTab{
+    margin-left: 400px;
+}
+
+/* Button 1 */
+.button{
+    width: 300px;
+    height: 300px;
+    text-align: left;
+    background-color: rgb(182, 2, 2);
+    border: 2px solid white;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 350%;
+    padding-left: 30px;
+    padding-bottom: 200px;
+}
+.button1{
+    background-color: rgb(182, 2, 2);
+    color: white;
+    transform: translateY(-5%);
+    transition-duration: 0.5s;
+}
+.button1:hover{
+    background-color: white;
+    color: rgb(182, 2, 2);
+    border: 2px solid black;
+}
+
+/* Button 2 */
+.button2{
+    background-color: rgb(19, 19, 109);
+    color: white;
+    transform: translateY(10%);
+    transition-duration: 0.5s;
+}
+.button2:hover{
+    background-color: white;
+    color: rgb(19, 19, 109);
+    border: 2px solid black;
+}
+
+/* Button 3 */
+.button3{
+    background-color: rgb(17, 92, 17);
+    color: white;
+    transform: translateY(25%);
+    transition-duration: 0.5s;
+}
+.button3:hover{
+    background-color: white;
+    color: rgb(17, 92, 17);
+    border: 2px solid black;
+}
+
+/* Day 0 Buttons */
+.box-btnd0{
+    width: 260px;
+    height: 40px;
+    background-color: red;
+    padding: 0;
+    border: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:150%;
+    color: black;
+}
+
+/* Social Media */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* Lists */
+ol li{
+    padding: 2px; 
+}
+ul li{
+    padding: 2px; 
+}
+.alignleft {
+    float: left;  
+    margin-left: 300px;    
+}
+.alignright {
+    float: right;
+    margin-right: 130px;
+}
+
+/* Hidden */
+.hidden{
+    display: none;
+}
+
+/* Price align */
+.alignleftp {
+    float: left;  
+    margin-left: 100px;    
+}
+.alignrightp {
+    float: right;
+    margin-right: 130px;
+}

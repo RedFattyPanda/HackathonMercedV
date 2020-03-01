@@ -6,16 +6,6 @@
     </head>
 
     <style>
-        h1{
-            text-align: center;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 400%;
-        }
-        h2{
-            text-align: center;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 200%
-        }
         h3{
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
@@ -29,25 +19,38 @@
         span.tab{
             margin-left: 150px;
         }
+        span.space{
+            margin-left: 60px;
+        }
         .alignleft {
             float: left;  
-            margin-left: 200px;    
+            margin-left: 300px;    
         }
         .alignright {
             float: right;
-            margin-right: 200px;
+            margin-right: 300px;
         }
         .aligntop {
             float: top;
-            margin-right: 200px;
+            margin-top: 20px;
         }
         .aligncenter{
             float: center;
-            margin-top: 263px;
+            margin-top: 200px;
         }
         .alignbottom{
-            float: center;
-            margin-top: 80px;
+            float: bottom;
+            margin-top: 200px;
+        }
+        .alignbottomleft{
+            float: left;
+            margin-top: 100px;
+            margin-left: 300px;   
+        }
+        .alignbottomright{
+            float: right;
+            margin-top: 100px;
+            margin-right: 300px;   
         }
     </style>
 
@@ -59,7 +62,13 @@
             <span class="tab"></span>
             <a href = "ContactUs.html">Next Page</a>
         </h3>
+        <p class="aligntop">Knife<br />&uarr;</p>
+        <p class="alignleft">Fork<br /><span class="space"></span>&searr;</p>
+        <p class="alignright">Pan<br /><b>&swarr;</b><span class="space"></span></p></p>
         <p class="aligncenter"><b>Kitchen Utensils <br />Recommendations</b></p>
+        <p class="alignbottomright">&nwarr;<span class="space"></span><br />Spoons</p>
+        <p class="alignbottomleft"><span class="space"></span><b>&nearr;</b><br />Dishes</p>
+        <p class="alignbottom">&darr;<br />Pot</p>
         
     </body>
 </html>

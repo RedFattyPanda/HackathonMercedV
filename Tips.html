@@ -28,24 +28,24 @@
             margin-left: 150px;
         }
         span.bigTab{
-            margin-left: 475px;
+            margin-left: 400px;
         }
         .button{
-            width: 250;
-            height: 150px;
-            text-align: left;
+            width: 300px;
+            height: 200px;
+            text-align: center;
             background-color: rgb(19, 19, 109);
             border: 2px solid white;
             display: inline-block;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 200%;
-            padding-left: 30px;
-            padding-bottom: 200px;
+            padding-left: 515x;
+            padding-bottom: 15px;
         }
         .button1{
+            text-align: center;
             background-color: rgb(182, 2, 2);
             color: white;
-            transform: translateY(-5%);
             transition-duration: 0.5s;
         }
         .button1 span{
@@ -69,35 +69,86 @@
             opacity: 1;
             right: 0;
         }
-        .box-btn2{
-            width: 250px;
-            height: 150px;
-            background-color: blue;
-            padding: 0;
-            border: none;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            font-size:150%;
-            color: black;
+        .button2{
+            text-align: center;
+            background-color: rgb(19, 19, 109);
+            color: white;
+            transition-duration: 0.5s;
         }
-        .box-btn3{
-            width: 250px;
-            height: 150px;
-            background-color: greenyellow;
-            padding: 0;
-            border: none;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            font-size:150%;
-            color: black;
+        .button2 span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
         }
-        .box-btn4{
-            width: 250px;
-            height: 150px;
-            background-color: aquamarine;
-            padding: 0;
-            border: none;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            font-size:150%;
-            color: black;
+        .button2 span:after{
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s
+        }
+        .button2:hover span {
+            padding-right: 25px;
+        }
+        .button2:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        .button3{
+            text-align: center;
+            background-color: rgb(17, 92, 17);
+            color: white;
+            transition-duration: 0.5s;
+        }
+        .button3 span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        .button3 span:after{
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s
+        }
+        .button3:hover span {
+            padding-right: 25px;
+        }
+        .button3:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        .button4{
+            text-align: center;
+            background-color: rgb(250, 152, 4);
+            color: white;
+            transition-duration: 0.5s;
+        }
+        .button4 span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        .button4 span:after{
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s
+        }
+        .button4:hover span {
+            padding-right: 25px;
+        }
+        .button4:hover span:after {
+            opacity: 1;
+            right: 0;
         }
     </style>
 
@@ -113,16 +164,15 @@
             <a href = "ContactUs.html">Next Page</a>
         </h3>
         <h1> Tips on Buying Furniture </h1>
+        <span class="bigTab"></span>
+        <button id="btn1" class="button button1" style="vertical-align:middle"><span>Desk</span></button>
+        <span class="smallTab"></span>
+        <button id="btn2" class="button button2" style="vertical-align:middle"><span>Chair</span></button>
         <br><br>
         <span class="bigTab"></span>
-        <button id="btn1" class="button" style="vertical-align:middle"><span>Desk</span></button>
+        <button id="btn3" class="button button3" style="vertical-align:middle"><span>Washing Machine</span></button>
         <span class="smallTab"></span>
-        <button id="btn2" class="box-btn2">Chair</button>
-        <br><br><br><br><br><br>
-        <span class="bigTab"></span>
-        <button id="btn3" class="box-btn3">Washing Machine</button>
-        <span class="smallTab"></span>
-        <button id="btn4" class="box-btn4">Transportation</button>
+        <button id="btn4" class="button button4" style="vertical-align:middle"><span>Transportation</span></button>
         
     </body>
 </html>

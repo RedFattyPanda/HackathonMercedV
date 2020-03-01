@@ -30,15 +30,44 @@
         span.bigTab{
             margin-left: 475px;
         }
-        .box-btn1{
-            width: 250px;
+        .button{
+            width: 250;
             height: 150px;
-            background-color: red;
-            padding: 0;
-            border: none;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            font-size:150%;
-            color: black;
+            text-align: left;
+            background-color: rgb(19, 19, 109);
+            border: 2px solid white;
+            display: inline-block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 200%;
+            padding-left: 30px;
+            padding-bottom: 200px;
+        }
+        .button1{
+            background-color: rgb(182, 2, 2);
+            color: white;
+            transform: translateY(-5%);
+            transition-duration: 0.5s;
+        }
+        .button1 span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        .button1 span:after{
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s
+        }
+        .button1:hover span {
+            padding-right: 25px;
+        }
+        .button1:hover span:after {
+            opacity: 1;
+            right: 0;
         }
         .box-btn2{
             width: 250px;
@@ -73,7 +102,9 @@
     </style>
 
     <body>
-        <h1> Tips on Buying Furniture </h1>
+        <div style="background-color: rgb(182, 2, 2);">
+            <p style="color: rgb(182, 2, 2);"><font size=5>border</font></p>
+        </div>
         <h3>
             <a href = "ImportantThings.html">Previous Page</a>
             <span class="medTab"></span>
@@ -81,9 +112,10 @@
             <span class="medTab"></span>
             <a href = "ContactUs.html">Next Page</a>
         </h3>
+        <h1> Tips on Buying Furniture </h1>
         <br><br>
         <span class="bigTab"></span>
-        <button id="btn1" class="box-btn1">Desk</button>
+        <button id="btn1" class="button" style="vertical-align:middle"><span>Desk</span></button>
         <span class="smallTab"></span>
         <button id="btn2" class="box-btn2">Chair</button>
         <br><br><br><br><br><br>
